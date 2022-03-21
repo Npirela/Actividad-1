@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Presentacion</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="#Formulario">Formulario</a></li>
+                <li><a href="Media.html">MultiMedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section>
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+             <!-- Formulario para datos personales -->
+            <form action="" autocomplete="on" target="_blank">
+                <div>
+                    <label for="Name">Nombre</label>
+                    <input type="text" name="Name" id="Name" autocomplete="name" placeholder="Coloque su NombreSin espacios en blanco" required>
+                </div>
+
+                <div>
+                    <label for="Lastname">Apellido</label>
+                    <input type="text" name="Lastname" id="Lastname" autocomplete="family-name" placeholder="Coloque su Apellido Sin espacios en blanco" required>
+                </div>
+                <div>    
+                    <label for="Birth">Fecha de Nacimiento</label>
+                    <input type="date" name="Birth" id="Birth" autocomplete="bday" placeholder="01/01/1111" required >  <!-- para recordar, bday es fecha de cumpleaños completa. -->
+                </div>
+                <div>   
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="Email" id="Email" autocomplete="email" placeholder="ejemplo@dominio.com" required>
+                </div> 
+                <div>   
+                    <label for="Password">Proteccion del Contenido</label>
+                    <input type="password" name="Password" id="Passwords" autocomplete="new-password" placeholder="Password Opcional">
+
+                </div> 
+                       
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+
+        <fieldset>
+            <legend>DATOS GENERALES</legend>
+            
+                <div>
+                    <label for="Options">seleccione alguno o varios lenguaje de programacion Preferido</label>
+                    <select id="Options" name="options" multiple >
+                    <option value="c#" >c#</option>
+                    <option value="PHP" selected>PHP</option>
+                    <option value="java">java</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="python">Python}</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Lenguajes">seleccione un lenguaje de programacion Preferido</label> <!-- lo investigue en  https://www.w3schools.com/html/html_form_elements.asp -->
+                    <input list="Lenguajes">
+                    <datalist id="Lenguajes" name="Lenguajes" >
+                    <option value="c#" >c#</option>
+                    <option value="PHP" selected>PHP</option>
+                    <option value="java">java</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="python">Python}</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="Response">Porque seleccionaste ese lenguaje</label>
+                    <textarea name="Response" id="Response" cols="30" rows="auto" placeholder="ingrese aqui su respuesta"></textarea>
+                </div>
+                <fieldset>
+                    <legend>Lenguajes que aprendes actualmente</legend>
+                    <input type="radio" id="html" name="Languagestudy" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="Languagestudy" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="Languagestudy" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </fieldset>
+
+                <div>
+                
+                <fieldset>
+                    <legend>Lenguajes que conoces</legend>
+                    <label for="html">Html
+                    <input id="html" name="lenguajes" type="checkbox" value="html" checked>
+                    </label>
+                    <label for="php">PHP
+                    <input id="php" name="lenguajes" type="checkbox" value="php"  >
+                    </label>
+                    <label for="c#">C#
+                    <input id="c#" name="lenguajes" type="checkbox" value="c#" >
+                    </label>
+                    <label for="java">Java
+                    <input id="java" name="lenguajes" type="checkbox" value="java" >
+                    </label>
+                    <label for="python">Python
+                    <input id="python" name="lenguajes" type="checkbox" value="python" >
+                    </label>
+    
+                </fieldset>                    
+
+                </div>
+
+                <fieldset>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                       
+                    </div>
+                </fieldset>
+            </form>
+        </fieldset>
+
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section>
+        <article>
+            
+            <div>
+                <h3>Texto de Prueba Articulo</h3>
+                    <hr>
+                        <p>Lorem ipsum <b>sit amet consectetur adipisicing elit. Accusantium</b> , veritatis atque? Saepe quis accusantium alias architecto praesentium ipsam dignissimos ex aspernatur hic! Doloremque pariatur eos non ipsa eaque corporis autem.
+                            Error impedit delectus perferendis. Quos, similique consequuntur, excepturi qui quasi sed, deleniti magni omnis tempore amet consequatur aliquid cum eos et doloribus asperiores. Eligendi explicabo officiis accusantium obcaecati voluptates! Voluptatum.
+                        </p>
+                            <br>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur architecto eum nemo veniam praesentium odit in, quisquam impedit atque explicabo? Reiciendis eaque nobis laboriosam alias esse itaque tempore assumenda.
+                        Accusantium nisi excepturi dolorem quis cupiditate eos laboriosam inventore quo, et illo, voluptate ut soluta odit? Sapiente corrupti similique distinctio provident minima quod explicabo, eos maiores voluptatibus! Commodi, eaque voluptates.
+                        </p>
+
+
+                        <ol>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                            <li>C/C++</li>
+                            <li>R</li>
+                            <li>TypeScript</li>
+                            <li>Swift</li>
+                            <li>Objective-C</li>
+                        </ol>
+            </div>
+
+            <div>
+                <h2>Texto de Prueba Secundario</h2>
+                    <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, excepturi odio voluptatum reprehenderit dolor ea quod, repellat, consequatur velit esse inventore! Veritatis labore nostrum illum ipsum esse excepturi exercitationem reprehenderit!</p>
+                            <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt repellat modi accusamus quia pariatur necessitatibus eos nesciunt eius soluta praesentium iusto nobis eveniet debitis, veniam suscipit, optio ut labore.</p>
+            </div>
+
+
+        </article>
+    </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>Esta Pagina Fue Realizada Por Nolberto Pirela.</p>
+        </section>
+    </footer>
+    
+</body>
+</html>

@@ -5,44 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Presentacion</h1>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="#Formulario">Formulario</a></li>
-                <li><a href="Media.html">MultiMedia</a></li>
+    <header class="Cabecera" id="Cabecera-Formlario">
+        <h1 class="Cabecera__Titulo" id="Titulo-Cabecera-Formulario" >Presentacion</h1>
+        <nav class="Cabecera__Navegador" id="Nav-Cabecera-Formulario">
+            <ul class="Cabecera__Lista">
+                <li class="Cabecera__Item"><a class="Cabecera__Link" href="Index.html">Inicio</a></li>
+                <li class="Cabecera__Item"><a class="Cabecera__Link" href="#Formulario">Formulario</a></li>
+                <li class="Cabecera__Item"><a class="Cabecera__Link" href="Media.html">MultiMedia</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-    <section>
-        <fieldset>
-            <legend>DATOS PERSONALES</legend>
+    <main class="Cuerpo" id="Cuerpo-Formulario">
+    <section class="Seccion__Cuerpo">
+        <fieldset class="Seccion__Division">
+            <legend class="Seccion__Leyenda">DATOS PERSONALES</legend>
              <!-- Formulario para datos personales -->
-            <form action="" autocomplete="on" target="_blank">
-                <div>
-                    <label for="Name">Nombre</label>
+            <form action="" autocomplete="on" target="_blank" class="Seccion__Formulario">
+                <div class="Seccion__Formulario__Contenedor">
+                    <label class="Seccion__Formulario__Etiqueta" for="Name">Nombre</label>
                     <input type="text" name="Name" id="Name" autocomplete="name" placeholder="Coloque su NombreSin espacios en blanco" required>
                 </div>
 
-                <div>
-                    <label for="Lastname">Apellido</label>
+                <div class="Seccion__Formulario__Contenedor">
+                    <label class="Seccion__Formulario__Etiqueta" for="Lastname">Apellido</label>
                     <input type="text" name="Lastname" id="Lastname" autocomplete="family-name" placeholder="Coloque su Apellido Sin espacios en blanco" required>
                 </div>
-                <div>    
-                    <label for="Birth">Fecha de Nacimiento</label>
+                <div class="Seccion__Formulario__Contenedor">    
+                    <label class="Seccion__Formulario__Etiqueta" for="Birth">Fecha de Nacimiento</label>
                     <input type="date" name="Birth" id="Birth" autocomplete="bday" placeholder="01/01/1111" required >  <!-- para recordar, bday es fecha de cumpleaños completa. -->
                 </div>
-                <div>   
-                    <label for="email">Correo Electronico</label>
+                <div class="Seccion__Formulario__Contenedor">   
+                    <label class="Seccion__Formulario__Etiqueta" for="email">Correo Electronico</label>
                     <input type="email" name="Email" id="Email" autocomplete="email" placeholder="ejemplo@dominio.com" required>
                 </div> 
-                <div>   
-                    <label for="Password">Proteccion del Contenido</label>
+                <div class="Seccion__Formulario__Contenedor">   
+                    <label class="Seccion__Formulario__Etiqueta" for="Password">Proteccion del Contenido</label>
                     <input type="password" name="Password" id="Passwords" autocomplete="new-password" placeholder="Password Opcional">
 
                 </div> 

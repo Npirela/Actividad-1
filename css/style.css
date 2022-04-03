@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+h1, h2, h3, h4 ,h5 ,h6{
+    font-family: 'Rubik Wet Paint', cursive;
+    color: 	rgb(255,255,255);
+    text-shadow: 2px 2px #c2e6f1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200&display=swap');
+
+
+*{
+    background-color: #00b0ff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Vazirmatn', sans-serif;
+    letter-spacing: 1px;
+}
